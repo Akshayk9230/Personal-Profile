@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-20JAAyvMwDai4xYClPItdkqBvpBwI1hIWmoTVMkl58I9+PWbJnBY6xxeqF3QMqGnt1kiNv/O0c70UyQ1f2Z4lw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray background color */
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .info {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .info h2, .info h3 {
+            margin: 10px 0;
+        }
+        .section {
+            display: none;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff; /* White background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .section.active {
+            display: block;
+        }
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .navigation a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #09abe1; /* Blue color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: #0792bb; /* Darker blue color on hover */
+        }
+        .section h3 {
+            margin-bottom: 10px;
+            color: #09abe1; /* Blue color */
+        }
+        .section p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .section ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        .section ul li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+        .section ul li:before {
+            content: "\f058"; /* FontAwesome bullet point */
+            font-family: "Font Awesome 5 Free";
+            margin-right: 5px;
+            color: #09abe1; /* Blue color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="profile-img" src="AKSHAY K.jpg" alt="Profile Picture">
+            <h1>Associate Engineer QA</h1>
+        </div>
+        <div class="info">
+            <h2>Name</h2>
+            <p>Akshay K</p>
+            <h2>Contact</h2>
+            <p>Email: akshay00923@gmail.com</p>
+            <p>Phone: +91 9480497210</p>
+        </div>
+        <div class="navigation">
+            <a href="#" onclick="showSection('profile')">Profile</a>
+            <a href="#" onclick="showSection('work')">Work Experience</a>
+            <a href="#" onclick="showSection('education')">Education</a>
+            <a href="#" onclick="showSection('skills')">Skills</a>
+            <a href="#" onclick="showSection('certifications')">Certifications</a>
+        </div>
+
+        <div id="profile" class="section active">
+            <h3>Profile Statement</h3>
+            <p>1.8 years of hands-on expertise as an Automation Test Engineer, ensuring software quality through robust testing methodologies. Proficient in API testing using Postman, with a knack for crafting and executing comprehensive test suites to validate functionality, reliability, and performance. Skilled in web automation testing using Selenium-Java and TestNG, creating robust automation scripts. Solid understanding of continuous integration practices via Jenkins. Adept at bug management using Jira, facilitating effective collaboration with cross-functional teams in identifying, reporting, and tracking software defects throughout the development life cycle.</p>
+        </div>
+
+        <div id="work" class="section">
+            <h3>Work Experience</h3>
+            <p><strong>Associate Engineer QA</strong></p>
+            <p>Zensoft Services Pvt Ltd</p>
+            <p>August 2022 - April 2024</p>
+            <p><b>Roles And Responsibilities:</b></p>
+            <ul>
+                <li>Conducted comprehensive API automation testing using Postman, ensuring the accuracy and reliability of web services.</li>
+                <li>Developed and executed automated test scripts for UI testing using Qualitia and Java Selenium.</li>  
+                <li>Collaborated with development and QA teams to identify and resolve software defects, enhancing overall product quality.</li> 
+                <li>Participated in Agile ceremonies, contributing to sprint planning, daily stand-ups, and sprint reviews for seamless project execution.</li> 
+                <li>Utilized Jira for test case management, defect tracking, and project collaboration, ensuring effective communication across teams.</li> 
+                <li>Done Regression analysis of both API and UI Automation Reports and analysed the reason for script failure and tried to resolve the failing scripts.</li> 
+                <li>Actively participated in the identification and implementation of test automation opportunities, optimizing testing processes.</li> 
+                <li>Implemented a solution using Java and Qualitia required for comparison of two files in various formats such as Excel, Pdf and Txt files and verifying if the contents of the files are same or not.</li>
+            </ul>
+        </div>
+
+        <div id="education" class="section">
+            <h3>Education</h3>
+            <p>B.E in Mechanical Engineering</p>
+            <p>Mangalore
+
+ Institue of Technology and Engineering</p>
+            <p>Graduation Year: 2020</p>
+        </div>
+
+        <div id="skills" class="section">
+            <h3>Skills</h3>
+            <ul>
+                <li>Java-Selenium</li>
+                <li>Postman</li>
+                <li>JIRA</li>
+                <li>Web Automation Testing</li>
+                <li>API Testing</li>
+                <li>Manual Testing</li>
+                <li>Black box Testing</li>
+                <li>TestNG</li>
+                <li>Jenkins</li>
+                <li>Agile-Scrum</li>
+                <li>Functional Testing</li>
+            </ul>
+        </div>
+
+        <div id="certifications" class="section">
+            <h3>Certifications</h3>
+            <ul>
+                <li>Completed a course on <b>Api testing using Postman</b> in Udemy</li>
+                <li>Completed a course on <b>Agile Fundamentals: Including Scrum and Kanban</b> on Udemy</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
